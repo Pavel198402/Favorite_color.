@@ -2,7 +2,19 @@
 #include "Prints.h"
 #include "ChooseCol.h"
 
-//void ChooseFun(int favoriteCOL)
+FavoriteColors* FavoriteColors::instance = nullptr;
+
+FavoriteColors* FavoriteColors::GetInstance()
+{
+	if (instance == nullptr)
+	{
+		instance = new FavoriteColors();
+	}
+
+	return instance;
+}
+
+
 void FavoriteColors::ChooseFun()
 {
 

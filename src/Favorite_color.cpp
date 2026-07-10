@@ -10,7 +10,7 @@ int main()
 {
 	int choice = 0;
 	//int favoriteCOL = 0;
-	FavoriteColors colors;
+	FavoriteColors* colors = FavoriteColors::GetInstance();
 	while (choice != 4)
 	{
 		printMainMenu();
@@ -20,13 +20,13 @@ int main()
 		case 1:
 		{
 			//AddFavoriteColor(favoriteCOL);
-			colors.AddFavoriteColor ();
+			colors->AddFavoriteColor ();
 			break;
 		}
 		case 3:
 		{
 			//ShowFun(favoriteCOL);
-			colors.ShowFun();
+			colors->ShowFun();
 			break;
 		}
 		case 2:
@@ -35,7 +35,7 @@ int main()
 
 		{
 			//DeleteFun(favoriteCOL);
-			colors.DeleteFun();
+			colors->DeleteFun();
 
 			break;
 		}

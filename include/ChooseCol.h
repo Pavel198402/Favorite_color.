@@ -8,8 +8,17 @@ class FavoriteColors
 {
 private:
     int favoriteCOL = 0;
+    static FavoriteColors* instance;
+
+    FavoriteColors()
+    {
+    }
 
 public:
+    FavoriteColors(const FavoriteColors&) = delete;
+    FavoriteColors& operator=(const FavoriteColors&) = delete;
+
+    static FavoriteColors* GetInstance();
 
     void ChooseFun();
     void AddFavoriteColor();
