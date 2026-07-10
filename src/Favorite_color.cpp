@@ -26,7 +26,7 @@ int main()
 		case 3:
 		{
 			//ShowFun(favoriteCOL);
-			colors->ShowFun();
+			(*colors). ShowFun();
 			break;
 		}
 		case 2:
