@@ -15,6 +15,8 @@ private:
     }
 
 public:
+
+// заборона копіювання та присвоєння
     FavoriteColors(const FavoriteColors&) = delete;
     FavoriteColors& operator=(const FavoriteColors&) = delete;
 
